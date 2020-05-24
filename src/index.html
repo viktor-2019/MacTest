@@ -29,47 +29,50 @@
 
           <form id="check-random">
             <div class="random">
-              <input id="random" name="random" type="radio" value="random" checked>
+              <input id="random" name="r-c-s" type="radio" value="random"  onchange="modeChange()" checked>
               <label for="random" class="view-random">Random</label>
             </div>
             <div class="categor">
-              <input id="categor" name="category" type="radio" value="category">
+              <input id="categor" name="r-c-s" type="radio" value="category" onchange="modeChange()">
               <label for="categor" class="view-categor"> From categories</label>
             </div>
             <div class="search">
-              <input id="search" name="search" type="radio" value="search">
+              <input id="search" name="r-c-s" type="radio" value="search" onchange="modeChange()">
               <label for="search" class="view-search"> Search</label>
             </div>
             <div class="search-text disp-none">
-              <input type="text" name="search-text" id="search-text">
-              </textarea>
+              <input type="text" name="search-text" id="search-text" placeholder="Search text">
+              <!-- </textarea> -->
             </div>
           </form>
 
           <form id="topics">
-
-            <input id="animal" name="animal" type="radio" value="animal">
+            <input id="animal" name="an-ca-ce-dev" type="radio" value="animal" onchange="modeCategory()">
             <label for="animal" class="view-animal">
-              <button class="topic">animal</button>
+              <span class="topic">animal</span>
             </label>
 
-            <input id="career" name="career" type="radio" value="career">
+            <input id="career" name="an-ca-ce-dev" type="radio" value="career" onchange="modeCategory()">
             <label for="career" class="view-career">
-              <button class="topic">career</button>
+              <span  class="topic">career</span>
             </label>
-            <input id="cerebrity" name="cerebrity" type="radio" value="cerebrity" checked>
-            <label for="cerebrity" class="view-cerebrity">
-              <button class="topic">cerebrity</button>
+
+            <input id="celebrity" name="an-ca-ce-dev" type="radio" value="celebrity" onchange="modeCategory()">
+            <label for="celebrity" class="view-celebrity">
+              <span class="topic">celebrity</span>
             </label>
-            <input id="dev" name="dev" type="radio" value="dev">
+            
+            <input id="dev" name="an-ca-ce-dev" type="radio" value="dev" onchange="modeCategory()">
             <label for="dev" class="view-dev">
-              <button class="topic">dev</button>
+              <span class="topic">dev</span>
             </label>
           </form>
 
           <button id="get-joke" role="button">Get a joke</button>
         </div>
+
         <div class="left-side_wrapper-down">
+
           <div class="card-joke">
             <div class="empty-heart">
               <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,6 +122,7 @@
     </div>
   </div>
 
+  <script src="js/index.js"></script>
 </body>
 
 </html>
