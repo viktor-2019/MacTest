@@ -1,0 +1,24 @@
+{
+  "name": "mactest",
+  "version": "1.0.0",
+  "description": "HTML CSS JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktor-2019/MacTest.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "VICTOR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viktor-2019/MacTest/issues"
+  },
+  "homepage": "https://github.com/viktor-2019/MacTest#readme"
+}

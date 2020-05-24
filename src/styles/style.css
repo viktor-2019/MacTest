@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&subset=cyrillic');
+
+.body {
+  background-color: #E5E5E5;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+}
+.left-side {
+  position: relative;
+  color: #333333;
+  min-width: 300px;
+  flex-grow: 3;
+}
+.right-side {
+  position: relative;
+  background: #F8F8F8;
+  width: 480px;
+}
+.left-side_wrapper {
+  position: absolute;
+  left: 140px;
+  right: 0;
+  top: 40px;
+}
+.left-side_wrapper-up {
+  height: 460px;
+}
+.left-side_wrapper-down {
+  margin: 40px 0 0 0;
+  height: 100%;
+  
+}
+.logo {
+  position: absolute;
+  width: 87px;
+  height: 28px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+h1 {
+  position: absolute;
+  height: 44px;
+  left: 0;
+  top: 106px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+.sub-title {
+  position: absolute;
+  height: 44px;
+  left: 0;
+  top: 150px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+}
+.random {
+  position: absolute;
+  top: 237px;
+  display: block;
+}
+.categor { 
+  position: absolute;
+  top:  273px;
+  width: 100%;
+}
+.search {
+  position: absolute;
+  top: 367px;
+}
+#random, #categor, #search { 
+  margin: 0 15px 0 0; 
+  border: 2px solid #ABABAB;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px; 
+  position: absolute;
+  top: 3px;
+  cursor: pointer; 
+}
+
+.view-random, .view-categor, .view-search {
+  display: inline-block;
+  position: absolute;
+  left: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+#topics {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  position: absolute;
+  top: 325px;
+  flex-wrap: wrap;
+}
+.topic {
+  margin-right: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+/* identical to box height, or 133% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border: 2px solid #F8F8F8;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: #ABABAB;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+#animal, #career, #cerebrity, #dev {
+  display: none;
+}
+.checked {
+  background-color: #F8F8F8;
+}
+#get-joke {
+  position: absolute;
+  top: 413px;
+  padding: 10px 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#search-text {
+  position: absolute;
+  width: 680px;
+  height: 42px;
+  top: 395px;
+  border: 2px solid #333333;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.disp-none {
+  display: none;
+}
+.left-side_down {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.card-joke {
+  position: relative;
+  background: #F8F8F8;
+  margin: 40px 0 0 0;
+  border-radius: 20px;
+  max-width: 680px;
+  height: 225px;
+}
+.empty-heart {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+.joke-id {
+  position: absolute;
+  width: 145px;
+  height: 14px;
+  left: 100px;
+  top: 67px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ABABAB;
+}
+.chat {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 40px;
+  top: 67px;
+  border-radius: 50%;
+  background: #FFFFFF;  
+}
+.joke-text {
+  position: absolute;
+  left: 100px;
+  top: 86px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+.last-update {
+  position: absolute;
+  height: 14px;
+  left: 100px;
+  top: 166px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+/* identical to box height, or 140% */
+  color: #ABABAB;
+}
+.topic-card {
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  cursor: inherit;
+  background-color: #fff;
+}
+
+.favor, .favorite {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  height: 28px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ABABAB;
+  display: none;
+}
+.favorite {
+  display: block;
+  left: 40px;
+}
+.open {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 134px;
+  display: none;
+}
+
+@media screen and (max-width: 1124px) {
+  .left-side_wrapper {
+    left: 40px;
+  }
+}
+
