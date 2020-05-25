@@ -257,10 +257,11 @@ h1 {
   background-color: #fff;
 }
 
-.favor, .favorite {
+.favorite {
   position: absolute;
   top: 40px;
-  right: 40px;
+  left: 40px;
+  width: 100px;
   height: 28px;
   font-family: Roboto;
   font-style: normal;
@@ -268,12 +269,9 @@ h1 {
   font-size: 20px;
   line-height: 28px;
   color: #ABABAB;
-  display: none;
-}
-.favorite {
   display: block;
-  left: 40px;
 }
+
 .open {
   position: absolute;
   right: 40px;
@@ -291,6 +289,35 @@ h1 {
 @media screen and (max-width: 1124px) {
   .left-side_wrapper {
     left: 40px;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+  .open {
+    display: block;
+  }
+  .close {
+    display: block;
+  }
+  .right-side {
+    display: none;
+  }
+  .favorite {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .open {
+    display: block;
+  }
+  .close {
+    display: block;
+  }
+  .right-side {
+    display: none;
+  }
+  .favorite {
+    right: 10px;
   }
 }
 
